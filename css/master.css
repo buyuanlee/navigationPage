@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-23/67670040.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-23/67670040.jpg);
+  filter: blur(10px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+button{
+background:none;
+border: none;
+color: #fff;
+position: absolute;
+right: 4px;
+bottom: 2px;
+display: none;
+}
+
+kbd {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 6em;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid rgb(181, 181, 181);
+  width: 6em;
+  height: 6em;
+  margin: 5px 3px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: bolder;
+}
+kbd:hover>button{
+  display: inline-block;
+
+}
+main {
+  padding: 200px 0;
+}
+
+.box {
+  text-align: center;
+}
+
+#content {
+  display: inline-block;
+}
+
+#content>div:nth-child(2) {
+  margin-left: 1em;
+}
+
+#content>div:nth-child(3) {
+  margin-left: 2em;
+}
