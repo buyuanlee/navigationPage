@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 body {
@@ -24,37 +25,50 @@ body {
   background-size: cover;
   z-index: -1;
 }
-button{
-background:none;
-border: none;
-color: #fff;
-position: absolute;
-right: 4px;
-bottom: 2px;
-display: none;
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  display: none;
 }
 
 kbd {
   display: inline-block;
   position: relative;
   text-align: center;
-  line-height: 6em;
+  line-height: 70px;
   vertical-align: middle;
   text-transform: uppercase;
   border: 1px solid rgb(181, 181, 181);
-  width: 6em;
-  height: 6em;
+  width: 70px;
+  height: 70px;;
   margin: 5px 3px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
 }
-kbd:hover>button{
-  display: inline-block;
 
+kbd:hover>button {
+  display: inline-block;
+}
+kbd>img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
 }
 main {
-  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .box {
